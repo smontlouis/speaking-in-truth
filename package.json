@@ -22,14 +22,18 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
+    "dev": "gatsby develop",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier-standard 'src/**/*.js'",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "standard": {
+    "globals": [ "graphql" ]
+  },
   "devDependencies": {
-    "prettier": "^1.7.4",
+    "gh-pages": "^1.0.0",
     "prettier-standard": "^7.0.3"
   }
 }

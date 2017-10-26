@@ -3,8 +3,6 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
-import './index.css'
-
 const Header = () => (
   <div
     style={{
@@ -27,7 +25,7 @@ const Header = () => (
             textDecoration: 'none'
           }}
         >
-          Gatsby
+          My website
         </Link>
       </h1>
     </div>
@@ -39,8 +37,7 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title='Gatsby Default Starter'
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' }
+        { name: 'description', content: 'Sample' }
       ]}
     />
     <Header />

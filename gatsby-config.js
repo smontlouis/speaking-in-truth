@@ -5,16 +5,22 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-glamor`,
-    `gatsby-transformer-remark`,
-    `gatsby-source-filesystem`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-google-analytics`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: 'pages'
+      }
+    },
     {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography.js`
       }
     },
-    // `gatsby-plugin-google-analytics`,
+    `gatsby-transformer-remark`
     // {
     //   resolve: `gatsby-plugin-manifest`,
     //   options: {
@@ -42,6 +48,6 @@ module.exports = {
     //     ],
     //   },
     // },
-    `gatsby-plugin-offline`
+    // `gatsby-plugin-offline`
   ]
 }

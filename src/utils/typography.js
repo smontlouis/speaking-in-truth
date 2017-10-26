@@ -11,7 +11,11 @@ const typography = new Typography({
     'Arial',
     'sans-serif'
   ],
-  bodyFontFamily: ['Georgia', 'serif']
+  bodyFontFamily: ['Georgia', 'serif'],
+  scaleRatio: 3,
+  overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options, styles) => ({
+
+  })
 })
 
 export default typography
