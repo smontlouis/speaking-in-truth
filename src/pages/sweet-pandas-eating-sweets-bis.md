@@ -1,5 +1,5 @@
 ---
-title: "Sweet Pandas Eating Sweets"
+title: "Sweet Pandas Eating Sweets Bis"
 description: loram ipsum
 date: "2017-08-10"
 ---

@@ -1,20 +1,47 @@
 import Typography from 'typography'
+import { colors, mediaQueries } from './theme'
 
 const typography = new Typography({
-  baseFontSize: '18px',
-  baseLineHeight: 1.45,
-  headerFontFamily: [
-    'Avenir Next',
-    'Helvetica Neue',
-    'Segoe UI',
-    'Helvetica',
-    'Arial',
-    'sans-serif'
+  baseFontSize: '16px',
+  baseLineHeight: 1.6,
+  bodyFontFamily: [
+    'Roboto',
+    'Arial'
   ],
-  bodyFontFamily: ['Georgia', 'serif'],
-  scaleRatio: 3,
-  overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options, styles) => ({
+  bodyWeight: 'lighter',
+  bodyColor: '#222222',
 
+  headerFontFamily: [
+    'TeX Gyre Schola',
+    'serif'
+  ],
+  headerColor: colors.primary,
+  headerWeight: 'normal',
+  scaleRatio: 2.1,
+  overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options, styles) => ({
+    '#___gatsby': {
+      backgroundColor: '#ddd'
+    },
+    [mediaQueries.mediumUp]: {
+      'html': {
+        ...adjustFontSizeTo('23px')
+      }
+    },
+    [mediaQueries.largeUp]: {
+      'html': {
+        ...adjustFontSizeTo('24px')
+      }
+    },
+    [mediaQueries.xLargeUp]: {
+      'html': {
+        ...adjustFontSizeTo('26px')
+      }
+    },
+    [mediaQueries.xxLargeUp]: {
+      'html': {
+        ...adjustFontSizeTo('26px')
+      }
+    }
   })
 })
 

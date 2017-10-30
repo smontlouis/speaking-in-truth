@@ -1,6 +1,10 @@
 
 import typography from '../utils/typography'
 import Helmet from 'react-helmet'
+import glamorous from 'glamorous'
+import Post from '../components/post'
+
+const { Div, H1 } = glamorous
 
 export default ({ data }) => {
   const post = data.markdownRemark
@@ -12,10 +16,10 @@ export default ({ data }) => {
           { name: 'description', content: post.frontmatter.description }
         ]}
       />
-      <h1>
-        {post.frontmatter.title}
-      </h1>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <Post
+        title={post.frontmatter.title}
+        html={post.html}
+      />
     </div>
   )
 }
