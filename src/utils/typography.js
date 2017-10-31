@@ -18,6 +18,7 @@ const typography = new Typography({
   headerColor: colors.primary,
   headerWeight: 'normal',
   scaleRatio: 2.1,
+  includeNormalize: false,
   overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options, styles) => ({
     '#___gatsby': {
       backgroundColor: '#ddd'
