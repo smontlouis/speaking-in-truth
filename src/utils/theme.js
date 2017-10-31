@@ -13,7 +13,7 @@ const [lowerXXLargeRange, upperXXLargeRange] = [xLargeBreakpoint + 1, xxLargeBre
 const screen = 'only screen'
 
 export const fonts = {
-
+  primary: 'TeX Gyre Schola'
 }
 
 export const colors = {

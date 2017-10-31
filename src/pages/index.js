@@ -1,59 +1,49 @@
 import glamorous from 'glamorous'
 import Helmet from 'react-helmet'
+import Waypoint from 'react-waypoint'
+
 import MenuNav from '../components/menuNav'
 import Container from '../components/container'
-import Arrow from '../components/arrow'
-import OpenMenuButton from '../components/openMenuButton'
-import Link from 'gatsby-link'
+import StoryTelling from '../components/home/storyTelling'
+import Hero from '../components/home/hero'
+import BlogPosts from '../components/home/blogPosts'
 
-import { scale, rhythm } from '../utils/typography'
-import Post from '../components/post'
+const { Div } = glamorous
 
-const { H1, Section, P, Div } = glamorous
+const onSectionEnter = () => document.body.classList.remove('on-section')
+const onSectionLeave = () => document.body.classList.add('on-section')
+
+const onFixMenu = ({ currentPosition, previousPosition }) => {
+  if (currentPosition === 'inside' && previousPosition === 'above') {
+    document.body.classList.remove('with-menu-attached')
+  }
+}
+const onUnfixMenu = ({ currentPosition, previousPosition }) => {
+  if (currentPosition === 'above' && previousPosition === 'inside') {
+    document.body.classList.add('with-menu-attached')
+  }
+}
 
 const IndexPage = ({ data }) => (
   <Div>
     <Helmet title={data.site.siteMetadata.title} />
-    <MenuNav items={data.allMarkdownRemark.edges} />
+    <MenuNav />
     <Container>
-      <OpenMenuButton />
-      <Section
-        marginTop='20vh'
-        display='flex'
-        flexDirection='column'
-        justifyContent='center'
-        alignItems='flex-start'
+      <Waypoint
+        topOffset={500}
+        onEnter={onSectionEnter}
+        onLeave={onSectionLeave}
       >
-        <H1
-          {...scale(1.9)}
-          lineHeight={rhythm(2.2)}
-        >
-          Le <br />
-          parler <br />
-          en langues. <br />
-        </H1>
-        <P
-          maxWidth={780}
-          {...scale(-0.1)}
-          lineHeight={rhythm(0.8)}
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac vulputate diam. Maecenas eget porttitor lorem. Nam finibus lacus a nunc luctus ornare. Vestibulum tempor scelerisque nisi, vitae tristique ipsum dignissim sed. Sed at vestibulum felis.
-        </P>
-      </Section>
-      {data.allMarkdownRemark.edges.map(({ node }, i) => (
-        <Section key={node.id}>
-          <Arrow />
-          <Link
-            to={node.fields.slug}
-            css={{ textDecoration: `none`, color: `inherit` }}
-          >
-            <Post
-              title={node.frontmatter.title}
-              html={node.html}
-            />
-          </Link>
-        </Section>
-      ))}
+        <div>
+          <Hero />
+          <StoryTelling />
+        </div>
+      </Waypoint>
+      <Waypoint
+        onEnter={onFixMenu}
+        onLeave={onUnfixMenu}
+      />
+      <BlogPosts posts={data.allMarkdownRemark.edges} />
     </Container>
   </Div>
 )

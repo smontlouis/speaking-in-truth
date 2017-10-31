@@ -1,5 +1,6 @@
 import glamorous from 'glamorous'
 import { connect } from 'redux-zero/react'
+import Link from 'gatsby-link'
 import { rhythm, scale } from '../utils/typography'
 import CloseMenuButton from '../components/closeMenuButton'
 
@@ -18,7 +19,10 @@ const NavContainer = glamorous.div(({ isMenuOpen, theme: { colors } }) => ({
   pointerEvents: 'none',
   transition: 'all 0.5s',
   padding: rhythm(1),
-
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  flexDirection: 'column',
   ...isMenuOpen ? {
     transform: 'scale(1)',
     opacity: 1,
@@ -26,30 +30,26 @@ const NavContainer = glamorous.div(({ isMenuOpen, theme: { colors } }) => ({
   } : {}
 }))
 
-const Link = glamorous.div(() => ({
-  ...scale(1),
-  marginBottom: rhythm(1),
+const StyledLink = glamorous(Link)(() => ({
+  ...scale(1.8),
+  marginBottom: rhythm(1.5),
   color: 'white',
-  fontFamily: 'TeX Gyre Schola'
+  fontFamily: 'TeX Gyre Schola',
+  textDecoration: 'none'
 }))
 
 const MenuNav = ({ isMenuOpen, items }) => (
   <NavContainer isMenuOpen={isMenuOpen}>
     <CloseMenuButton />
-    <Div
-      maxWidth={770}
-      marginTop='20vh'
-    >
-      {items.map(({ node }, i) => (
-        <Link
-          key={i}
-          maxWidth={770}
-          lineHeight={rhythm(5 / 3)}
-        >
-          {node.frontmatter.title}
-        </Link>
-      ))}
-    </Div>
+    <StyledLink to='/'>
+      Accueil
+    </StyledLink>
+    <StyledLink to='/about'>
+      À propos
+    </StyledLink>
+    <StyledLink to='/contact'>
+      Contact
+    </StyledLink>
   </NavContainer>
 )
 

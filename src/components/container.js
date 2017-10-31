@@ -3,11 +3,14 @@ import { connect } from 'redux-zero/react'
 import { rhythm } from '../utils/typography'
 import { actions } from '../redux/modules/ui'
 
-const Container = glamorous.div(({ isMenuOpen }) => ({
-  padding: rhythm(1),
-  background: 'white',
-  transition: 'transform 0.5s',
+const Container = glamorous.div(({ isMenuOpen, theme: { colors } }) => ({
+  backgroundColor: colors.primary,
+  transition: 'transform 0.5s, background-color 1s',
   transformOrigin: '50% 50vh',
+
+  '.on-section &': {
+    backgroundColor: 'white'
+  },
 
   ...isMenuOpen ? {
     transform: 'scale(0.8)'
