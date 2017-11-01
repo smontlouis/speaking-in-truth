@@ -6,7 +6,7 @@ import Row from '../row'
 
 const { P } = glamorous
 
-const Container = glamorous.section(({ theme: { colors } }) => ({
+const Container = glamorous.section(({ theme: { colors, fonts } }) => ({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
@@ -16,7 +16,7 @@ const Container = glamorous.section(({ theme: { colors } }) => ({
 
   '& p': {
     color: 'white',
-    fontFamily: 'TeX Gyre Schola',
+    fontFamily: fonts.primary,
     ...scale(0.7),
     lineHeight: rhythm(1.6),
     marginBottom: rhythm(2)

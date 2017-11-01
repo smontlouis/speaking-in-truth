@@ -3,16 +3,29 @@ import { rhythm } from '../utils/typography'
 
 const { Div, H1 } = glamorous
 
+const Heading = glamorous.h1(({ theme: { mediaQueries } }) => ({
+  maxWidth: 770,
+  lineHeight: rhythm(5 / 3),
+
+  [mediaQueries.largeUp]: {
+    marginRight: '25%'
+  }
+}))
+
+const Text = glamorous.div(({ theme: { mediaQueries } }) => ({
+  maxWidth: 770,
+
+  [mediaQueries.largeUp]: {
+    marginRight: '25%'
+  }
+}))
+
 const Post = ({title, html}) => (
   <article>
-    <H1
-      maxWidth={770}
-      lineHeight={rhythm(5 / 3)}
-    >
+    <Heading>
       {title}
-    </H1>
-    <Div
-      maxWidth={770}
+    </Heading>
+    <Text
       dangerouslySetInnerHTML={{ __html: html }}
     />
   </article>

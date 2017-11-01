@@ -8,20 +8,25 @@ const typography = new Typography({
     'Roboto',
     'Arial'
   ],
-  bodyWeight: 'lighter',
+  bodyWeight: 300,
   bodyColor: '#222222',
 
   headerFontFamily: [
-    'TeX Gyre Schola',
+    'Libre Baskerville',
     'serif'
   ],
   headerColor: colors.primary,
   headerWeight: 'normal',
   scaleRatio: 2.1,
-  includeNormalize: false,
   overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options, styles) => ({
     '#___gatsby': {
       backgroundColor: '#ddd'
+    },
+    'html': {
+      overflowX: 'hidden'
+    },
+    'body': {
+      overflowX: 'hidden'
     },
     [mediaQueries.mediumUp]: {
       'html': {

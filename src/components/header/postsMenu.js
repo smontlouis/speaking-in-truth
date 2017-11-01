@@ -4,14 +4,14 @@ import glamorous from 'glamorous'
 import { rgba } from 'polished'
 import { rhythm } from '../../utils/typography'
 
-const Li = glamorous.li(({ isActive, theme: { fonts, colors } }) => ({
+const Li = glamorous.li(({ isActive, theme: { fonts, colors, mediaQueries } }) => ({
   listStyleType: 'upper-roman',
   listStylePosition: 'inside',
   fontFamily: fonts.primary,
-  fontSize: rhythm(2 / 5),
-  lineHeight: rhythm(3 / 5),
-  transform: 'translateX(30%)',
-  transition: 'all 0.3s ease-in-out',
+  fontSize: rhythm(2 / 6),
+  lineHeight: rhythm(3 / 6),
+  transform: 'translateX(20%)',
+  transition: 'all 0.2s ease-in-out',
   color: rgba(colors.primary, 0.4),
   cursor: 'pointer',
 
@@ -22,39 +22,48 @@ const Li = glamorous.li(({ isActive, theme: { fonts, colors } }) => ({
   ...isActive ? {
     transform: 'translateX(0%)',
     color: colors.primary
-  } : {}
+  } : {},
+
+  [mediaQueries.xLargeUp]: {
+    fontSize: rhythm(2 / 5),
+    lineHeight: rhythm(3 / 5)
+  }
 }))
 
 const Ul = glamorous.ul(({ theme: { mediaQueries } }) => ({
-  [mediaQueries.smallOnly]: {
-    display: 'none'
-  },
+  display: 'none',
 
-  position: 'absolute',
-  top: '50vh',
-  transform: 'translateY(-50%) translateX(20px)',
-  opacity: 0,
-  transition: 'all 0.3s ease-in-out',
-  display: 'block',
-  width: 300,
-  textAlign: 'left',
-  margin: 0,
-
-  ':before': {
-    content: '""',
+  [mediaQueries.largeUp]: {
     position: 'absolute',
-    top: 0,
-    right: 0,
-    left: 0,
-    bottom: 0,
-    background: 'linear-gradient(to right, transparent 80%, white 100%)',
-    pointerEvents: 'none',
-    zIndex: 1
+    top: '50vh',
+    transform: 'translateY(-50%) translateX(20px)',
+    opacity: 0,
+    transition: 'all 0.3s ease-in-out',
+    display: 'block',
+    width: 200,
+    textAlign: 'left',
+    margin: 0,
+
+    ':before': {
+      content: '""',
+      position: 'absolute',
+      top: 0,
+      right: 0,
+      left: 0,
+      bottom: 0,
+      background: 'linear-gradient(to right, rgba(255,255,255, 0) 80%, white 100%)',
+      pointerEvents: 'none',
+      zIndex: 1
+    },
+
+    '.with-menu-attached &': {
+      transform: 'translateY(-50%) translateX(0)',
+      opacity: 1
+    }
   },
 
-  '.with-menu-attached &': {
-    transform: 'translateY(-50%) translateX(0)',
-    opacity: 1
+  [mediaQueries.xLargeUp]: {
+    width: 300
   }
 }))
 

@@ -6,6 +6,7 @@ import PostsMenu from './postsMenu'
 import OpenMenuButton from './openMenuButton'
 
 const Container = glamorous.div({
+  zIndex: 1,  
   top: 0,
   right: 0,
   position: 'absolute',

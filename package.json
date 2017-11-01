@@ -19,6 +19,8 @@
     "react-icons": "^2.2.7",
     "react-waypoint": "^7.3.1",
     "redux-zero": "^4.2.1",
+    "typeface-libre-baskerville": "^0.0.43",
+    "typeface-roboto": "^0.0.43",
     "velocity-animate": "^1.5.0"
   },
   "keywords": [
@@ -31,7 +33,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier-standard 'src/**/*.js'",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -r https://github.com/bulby97/bulby97.github.io.git -b master",
+    "deploy": "rm -rf public/ && gatsby build --prefix-paths && gh-pages -d public -r https://github.com/bulby97/bulby97.github.io.git -b master",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "standard": {

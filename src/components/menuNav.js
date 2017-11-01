@@ -4,16 +4,14 @@ import Link from 'gatsby-link'
 import { rhythm, scale } from '../utils/typography'
 import CloseMenuButton from '../components/closeMenuButton'
 
-const { Div } = glamorous
-
 const NavContainer = glamorous.div(({ isMenuOpen, theme: { colors } }) => ({
   position: 'fixed',
+  zIndex: 3,
   background: colors.primary,
   top: 0,
   left: 0,
   right: 0,
   bottom: 0,
-  zIndex: 1,
   transform: 'scale(1.2)',
   opacity: 0,
   pointerEvents: 'none',
@@ -30,11 +28,11 @@ const NavContainer = glamorous.div(({ isMenuOpen, theme: { colors } }) => ({
   } : {}
 }))
 
-const StyledLink = glamorous(Link)(() => ({
-  ...scale(1.8),
+const StyledLink = glamorous(Link)(({ theme: { fonts } }) => ({
+  ...scale(1.5),
   marginBottom: rhythm(1.5),
   color: 'white',
-  fontFamily: 'TeX Gyre Schola',
+  fontFamily: fonts.primary,
   textDecoration: 'none'
 }))
 
