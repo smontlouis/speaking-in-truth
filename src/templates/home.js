@@ -24,7 +24,7 @@ const onUnfixMenu = ({ currentPosition, previousPosition }) => {
   }
 }
 
-const IndexPage = ({ data }) => console.log(data) || (
+const IndexPage = ({ data }) => (
   <Div>
     <Helmet title={data.site.siteMetadata.title} />
     <MenuNav />
