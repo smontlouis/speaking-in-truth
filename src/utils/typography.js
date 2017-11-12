@@ -25,6 +25,11 @@ const typography = new Typography({
     'html': {
       overflowX: 'hidden'
     },
+
+    'html.is-menu-opened': {
+      overflow: 'hidden'
+    },
+
     'body': {
       overflowX: 'hidden'
     },

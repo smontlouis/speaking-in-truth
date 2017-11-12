@@ -10,17 +10,17 @@ import BlogPosts from '../components/home/blogPosts'
 
 const { Div } = glamorous
 
-const onSectionEnter = () => document.body.classList.remove('on-section')
-const onSectionLeave = () => document.body.classList.add('on-section')
+const onSectionEnter = () => document.documentElement.classList.remove('on-section')
+const onSectionLeave = () => document.documentElement.classList.add('on-section')
 
 const onFixMenu = ({ currentPosition, previousPosition }) => {
   if (currentPosition === 'inside' && previousPosition === 'above') {
-    document.body.classList.remove('with-menu-attached')
+    document.documentElement.classList.remove('with-menu-attached')
   }
 }
 const onUnfixMenu = ({ currentPosition, previousPosition }) => {
   if (currentPosition === 'above' && previousPosition === 'inside') {
-    document.body.classList.add('with-menu-attached')
+    document.documentElement.classList.add('with-menu-attached')
   }
 }
 
