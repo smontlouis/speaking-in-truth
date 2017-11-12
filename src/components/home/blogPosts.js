@@ -18,30 +18,32 @@ const BlogPosts = ({ posts, setCurrentBlog }) => (
   <BlogPostsContainer>
     <Header posts={posts} />
     <Row>
-      {posts.map(({ node }, i) => (
-        <Waypoint
-          bottomOffset='60%'
-          topOffset='60%'
-          onEnter={() => setCurrentBlog(i)}
-          key={node.id}
-        >
-          <Section
-            id={node.fields.slug}
-            paddingTop={rhythm(2)}
-            paddingBottom={rhythm(2)}
+      {posts
+        .filter(({ node }) => node.fields.slug !== '/')
+        .map(({ node }, i) => (
+          <Waypoint
+            bottomOffset='60%'
+            topOffset='60%'
+            onEnter={() => setCurrentBlog(i)}
+            key={node.id}
           >
-            {/* <Link
-              to={node.fields.slug}
-              css={{ textDecoration: `none`, color: `inherit` }}
-            > */}
-            <Post
-              title={node.frontmatter.title}
-              html={node.html}
-            />
-            {/* </Link> */}
-          </Section>
-        </Waypoint>
-      ))}
+            <Section
+              id={node.fields.slug}
+              paddingTop={rhythm(2)}
+              paddingBottom={rhythm(2)}
+            >
+              {/* <Link
+                to={node.fields.slug}
+                css={{ textDecoration: `none`, color: `inherit` }}
+              > */}
+              <Post
+                title={node.frontmatter.title}
+                html={node.html}
+              />
+              {/* </Link> */}
+            </Section>
+          </Waypoint>
+        ))}
     </Row>
   </BlogPostsContainer>
 )

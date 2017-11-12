@@ -17,21 +17,18 @@ const Container = glamorous.section(({ theme: { colors, fonts } }) => ({
   '& p': {
     color: 'white',
     fontFamily: fonts.primary,
-    ...scale(0.7),
-    lineHeight: rhythm(1.6),
+    ...scale(0.5),
+    lineHeight: rhythm(1.4),
     marginBottom: rhythm(2)
   }
 }))
 
-const StoryTelling = () => (
+const StoryTelling = ({ content }) => (
   <Container>
     <Row>
-      <P>
-        Hello, we are Priestley. But really, I am Davis. I am a storyteller. Priestley is my family, but we’re changing our name. Did you read that poem above? Please read it again, it’s very short, and it’s unlocked in me an idea that’s been dying to surface for the last few years. The name Priestley no longer feels big enough to hold our ambitions.
-      </P>
-      <P>
-        As creators, strategists, and producers we’ve been guided by the ethos that life is too short for bad relationships, bad days, and bad content. We’ve built our reputation by defending the story, delivering excellence, and treating our clients with love - you know, how human beings enjoy being treated.
-      </P>
+      <P
+        dangerouslySetInnerHTML={{ __html: content }}
+      />
     </Row>
   </Container>
 )

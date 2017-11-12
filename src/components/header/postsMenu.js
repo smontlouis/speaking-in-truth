@@ -150,7 +150,7 @@ const PostMenu = ({ posts, currentBlog }) => (
     <Ul
       overflow='auto'
     >
-      {posts.map(({ node }, i) => (
+      {posts.filter(({ node }) => node.fields.slug !== '/').map(({ node }, i) => (
         <Li
           key={i}
           isActive={i === currentBlog}

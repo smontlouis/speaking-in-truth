@@ -24,7 +24,7 @@ const onUnfixMenu = ({ currentPosition, previousPosition }) => {
   }
 }
 
-const IndexPage = ({ data }) => (
+const IndexPage = ({ data }) => console.log(data) || (
   <Div>
     <Helmet title={data.site.siteMetadata.title} />
     <MenuNav />
@@ -36,7 +36,9 @@ const IndexPage = ({ data }) => (
       >
         <div>
           <Hero />
-          <StoryTelling />
+          <StoryTelling
+            content={data.markdownRemark.html}
+          />
         </div>
       </Waypoint>
       <Waypoint
@@ -51,13 +53,19 @@ const IndexPage = ({ data }) => (
 export default IndexPage
 
 export const query = graphql`
-  query IndexQuery {
+query IndexQuery($slug: String!) {
     site {
       siteMetadata {
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      frontmatter {
+        title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___order], order: ASC }) {
       totalCount
       edges {
         node {
