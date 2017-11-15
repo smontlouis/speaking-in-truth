@@ -2,7 +2,7 @@
 title: Conclusion
 description: loram ipsum
 date: "2017-08-10"
-order: 11
+order: 13
 ---
 
 Paul traite du sujet des dons spirituels et particulièrement du parler en langue dans 1 Corinthiens 12 à 14 car il y avait une grande confusion à ce sujet dans l'église de Corinthe. Ce sujet n'est traité nulle part ailleurs dans ses épîtres aux différentes églises qu'il avait implanté.
