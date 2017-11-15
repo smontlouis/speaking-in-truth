@@ -19,11 +19,11 @@ Lisons **Genèse 11:1-9 :**
 
 La mission donnée par Jésus à ses disciples était de porter l'évangile au monde entier :
 
-> « Allez, faites **de toutes les nations** des disciples, les baptisant au nom du Père, du Fils et du Saint-Esprit » <br><small>- - Mattieu 28:19</small>
+> « Allez, faites **de toutes les nations** des disciples, les baptisant au nom du Père, du Fils et du Saint-Esprit » <br><small>- Mattieu 28:19</small>
 
 Mais cette tache était clairement impossible à réaliser à taille humaine ! C'est la raison pour laquelle le Saint-Esprit leur fut envoyé par Jésus. Il devait leur accorder la force et la sagesse dont ils auraient besoin dans leur mission, mais aussi les équiper de dons divers pour faire faces aux différents problèmes qui feraient obstacle à la propagation de l'évangile et à l'édification de l'église, y compris celui de la barrière des langues qui n'en était pas des moindres !
 
-> « Mais vous recevrez une puissance, le Saint-Esprit survenant sur vous, et vous serez mes témoins à Jérusalem, dans toute la Judée, dans la Samarie, et jusqu'aux extrémités de la terre. » - Actes 1:8
+> « Mais vous recevrez une puissance, le Saint-Esprit survenant sur vous, et vous serez mes témoins à Jérusalem, dans toute la Judée, dans la Samarie, et jusqu'aux extrémités de la terre. » <br><small>- Actes 1:8</small>
 
 > « Puis il leur dit : Allez par tout le monde, et prêchez la bonne nouvelle à toute la création. Voici les miracles qui accompagneront ceux qui auront cru : en mon nom, ils chasseront les démons; **ils parleront de nouvelles langues;** » <br><small>- Marc 16:15,17</small>
 
