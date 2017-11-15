@@ -7,7 +7,7 @@ order: 7
 
 La Bible déclare dans **1 Corinthiens 12:4-7 :**
 
-> « Il y a diversité de dons, mais le même Esprit;d iversité de ministères, mais le même Seigneur; diversité d'opérations, mais le même Dieu qui opère tout en tous. Or, à chacun la manifestation de l’Esprit est donnée **pour l’utilité commune**." 
+> « Il y a diversité de dons, mais le même Esprit; diversité de ministères, mais le même Seigneur; diversité d'opérations, mais le même Dieu qui opère tout en tous. Or, à chacun la manifestation de l’Esprit est donnée **pour l’utilité commune**." 
 
 Aucun don de l'Esprit n'est donc donné à un chrétien pour sa propre édification, tous les dons sont donnés *pour l'utilité commune* ou de manière plus simple, *pour l'édification de l'église*. 
 
