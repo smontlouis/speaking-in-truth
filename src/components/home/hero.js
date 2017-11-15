@@ -41,7 +41,7 @@ const Container = glamorous.section({
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
-  backgroundImage: 'url(/images/background.jpg)',
+  backgroundImage: 'url(/images/background.png)',
   backgroundPosition: 'right bottom',
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat'
