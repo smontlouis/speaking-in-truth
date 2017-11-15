@@ -53,7 +53,7 @@ const Hero = () => (
       <Heading>
         Le <br />
         parler <br />
-        en langue. <br />
+        en langues. <br />
       </Heading>
       <ScrollSymbolImg
         src={ScrollSymbol}
