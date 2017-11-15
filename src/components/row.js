@@ -5,7 +5,7 @@ const Row = glamorous.section(({ theme: { mediaQueries } }) => ({
   position: 'relative',
 
   [mediaQueries.largeUp]: {
-    width: '80%'
+    width: '85%'
   },
 
   [mediaQueries.xLargeUp]: {

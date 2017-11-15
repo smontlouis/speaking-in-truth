@@ -1,5 +1,5 @@
 ---
-title: Le parler en langues
+title: Le parler en langue
 description: loram ipsum
 date: "2017-08-21"
 ---

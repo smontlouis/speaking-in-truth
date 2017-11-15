@@ -67,13 +67,23 @@ const Li = glamorous.li(({ isActive, theme: { fonts, colors, mediaQueries } }) =
   } : {},
 
   [mediaQueries.largeUp]: {
-    transform: 'translateX(20%)',
-    fontSize: rhythm(2 / 5),
-    lineHeight: rhythm(3 / 5),
+    transform: 'translateX(7%)',
+    fontSize: rhythm(2 / 6),
+    lineHeight: rhythm(3 / 6),
 
     ...isActive ? {
-      transform: 'translateX(0%)',
+      transform: 'translateX(0%)'
     } : {}
+  },
+
+  [mediaQueries.xLargeUp]: {
+    fontSize: rhythm(2 / 6),
+    lineHeight: rhythm(3 / 6)
+  },
+
+  [mediaQueries.xxLargeUp]: {
+    fontSize: rhythm(2 / 5),
+    lineHeight: rhythm(3 / 5)
   }
 }))
 
@@ -106,7 +116,7 @@ const Container = glamorous.div(({ isOpened, theme: { mediaQueries } }) => ({
     opacity: 0,
     transition: 'all 0.3s ease-in-out',
     display: 'block',
-    width: 200,
+    width: 250,
     textAlign: 'left',
     margin: 0,
 
@@ -134,6 +144,10 @@ const Container = glamorous.div(({ isOpened, theme: { mediaQueries } }) => ({
 
   [mediaQueries.xLargeUp]: {
     width: 300
+  },
+
+  [mediaQueries.xxLargeUp]: {
+    width: 400
   }
 }))
 

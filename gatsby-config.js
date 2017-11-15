@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Generic Title`
+    title: `Le parler en langue - Qu'est-ce que c'est ?`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

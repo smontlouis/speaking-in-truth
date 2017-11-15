@@ -8,6 +8,10 @@ const Heading = glamorous.h1(({ theme: { mediaQueries } }) => ({
   lineHeight: rhythm(5 / 3),
 
   [mediaQueries.largeUp]: {
+    marginRight: '30%'
+  },
+
+  [mediaQueries.xLargeUp]: {
     marginRight: '25%'
   }
 }))
@@ -16,6 +20,10 @@ const Text = glamorous.div(({ theme: { mediaQueries } }) => ({
   maxWidth: 770,
 
   [mediaQueries.largeUp]: {
+    marginRight: '30%'
+  },
+
+  [mediaQueries.xLargeUp]: {
     marginRight: '25%'
   }
 }))
