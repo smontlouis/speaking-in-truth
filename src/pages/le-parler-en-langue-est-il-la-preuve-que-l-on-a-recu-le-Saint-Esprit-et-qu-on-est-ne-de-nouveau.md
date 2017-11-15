@@ -1,5 +1,5 @@
 ---
-title: Le parler en langue est-il la preuve que l'on a reçu le Saint-Esprit et qu'on est né de nouveau ?
+title: Le parler en langues est-il la preuve que l'on a reçu le Saint-Esprit et qu'on est né de nouveau ?
 description: loram ipsum
 date: "2017-08-21"
 order: 2
@@ -13,4 +13,4 @@ Il est intéressant de noter ici qu'il n'est indiqué nulle part que ces 3000 â
 
 > « En effet, **à l’un** est donnée par l’Esprit une parole de sagesse; **à un autre**, une parole de connaissance, selon le même Esprit; **à un autre**, la foi, par le même Esprit; **à un autre**, le don des guérisons, par le même Esprit; **à un autre**, le don d’opérer des miracles; **à un autre**, la prophétie; **à un autre**, le discernement des esprits; **à un autre**, la diversité des langues; **à un autre**, l’interprétation des langues. » <br /> <small>1 Corinthiens 12:8‭-‬10</small>
 
-Dire que le parler en langue est le signe de la nouvelle naissance signifierait que tous les chrétiens devraient parler en langue. Or, la parole de Dieu est très claire ici. Dans cette liste non exhaustive des dons de l'Esprit, Paul explique que la distribution des dons se fait selon le bon plaisir de l'Esprit-Saint et que tous n'ont pas le ou les mêmes dons !
+Dire que le parler en langues est le signe de la nouvelle naissance signifierait que tous les chrétiens devraient parler en langues. Or, la parole de Dieu est très claire ici. Dans cette liste non exhaustive des dons de l'Esprit, Paul explique que la distribution des dons se fait selon le bon plaisir de l'Esprit-Saint et que tous n'ont pas le ou les mêmes dons !

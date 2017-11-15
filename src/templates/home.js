@@ -26,7 +26,12 @@ const onUnfixMenu = ({ currentPosition, previousPosition }) => {
 
 const IndexPage = ({ data }) => (
   <Div>
-    <Helmet title={data.site.siteMetadata.title} />
+    <Helmet
+      title={data.site.siteMetadata.title}
+      meta={[
+        { name: 'description', content: data.site.siteMetadata.description }
+      ]}
+    />
     <MenuNav />
     <Container>
       <Waypoint
@@ -56,7 +61,8 @@ export const query = graphql`
 query IndexQuery($slug: String!) {
     site {
       siteMetadata {
-        title
+        title,
+        description
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {

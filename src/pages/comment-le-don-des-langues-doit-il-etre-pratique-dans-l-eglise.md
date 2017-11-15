@@ -15,4 +15,4 @@ La Parole de Dieu est très claire ici :
 
 > « Que tout se fasse avec bienséance et avec ordre. (v.40) car Dieu n'est pas un Dieu de désordre, mais de paix. (v.33) »
 
-En d'autres termes, si le "parler en langue" est pratiqué d'une autre façon que celle-ci dans une église et qu'il en résulte de la confusion, Dieu n'en est pas l'auteur.
+En d'autres termes, si le "parler en langues" est pratiqué d'une autre façon que celle-ci dans une église et qu'il en résulte de la confusion, Dieu n'en est pas l'auteur.

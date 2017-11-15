@@ -5,7 +5,7 @@ date: "2017-08-21"
 order: 5
 ---
 
-Il existe trois références où le don de parler en langue se manifeste dans la Bible. On les trouve dans le livre des Actes des Apôtres :
+Il existe trois références où le don de parler en langues se manifeste dans la Bible. On les trouve dans le livre des Actes des Apôtres :
 
 - Actes 2:4
 - Actes 10:44-46

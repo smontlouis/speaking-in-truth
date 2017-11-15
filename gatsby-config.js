@@ -1,12 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: `Le parler en langue - Qu'est-ce que c'est ?`
+    title: `Le parler en langues - Qu'est-ce que c'est ?`,
+    description: 'Le "parler en langues" est une pratique très répandue dans les églises chrétiennes aujourd\'hui. Ce sujet demeure de ce fait l\'un des plus débattus et des plus complexes pour la plupart des chrétiens aujourd\'hui.'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-glamor`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-google-analytics`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-109677220-1',
+        // Setting this parameter is optional
+        anonymize: true
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
