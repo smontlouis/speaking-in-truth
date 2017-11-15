@@ -34,7 +34,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier-standard 'src/**/*.js'",
-    "deploy": "rm -rf public/ && gatsby build --prefix-paths && gh-pages -d public -r https://github.com/bulby97/speaking-in-truth-prod.git -b master",
+    "deploy": "rm -rf public/ && gatsby build --prefix-paths && cp ./src/CNAME public/ && gh-pages -d public -r https://github.com/bulby97/speaking-in-truth-prod.git -b master",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "standard": {
