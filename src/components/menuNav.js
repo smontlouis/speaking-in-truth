@@ -3,6 +3,7 @@ import { connect } from 'redux-zero/react'
 import Link from 'gatsby-link'
 import { rhythm, scale } from '../utils/typography'
 import CloseMenuButton from '../components/closeMenuButton'
+import { actions } from '../redux/modules/ui'
 
 const NavContainer = glamorous.div(({ isMenuOpen, theme: { colors } }) => ({
   position: 'fixed',
@@ -36,21 +37,24 @@ const StyledLink = glamorous(Link)(({ theme: { fonts } }) => ({
   textDecoration: 'none'
 }))
 
-const MenuNav = ({ isMenuOpen, items }) => (
+const StyledMailTo = StyledLink.withComponent('a')
+
+const MenuNav = ({ isMenuOpen, items, closeMenu }) => (
   <NavContainer isMenuOpen={isMenuOpen}>
     <CloseMenuButton />
-    <StyledLink to='/'>
+    <StyledLink onClick={closeMenu} to='/'>
       Accueil
     </StyledLink>
-    <StyledLink to='/about'>
+    <StyledLink onClick={closeMenu} to='/a-propos'>
       À propos
     </StyledLink>
-    <StyledLink to='/contact'>
+    <StyledMailTo href='mailto:parlerenlangues@gmail.com'>
       Contact
-    </StyledLink>
+    </StyledMailTo>
   </NavContainer>
 )
 
 export default connect(
-  ({ isMenuOpen }) => ({ isMenuOpen })
+  ({ isMenuOpen }) => ({ isMenuOpen }),
+  actions
 )(MenuNav)

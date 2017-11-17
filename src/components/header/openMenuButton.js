@@ -5,10 +5,17 @@ import { lighten } from 'polished'
 import { actions } from '../../redux/modules/ui'
 import { rhythm } from '../../utils/typography'
 
-const MenuWrapper = glamorous.div(({ theme: { colors } }) => ({
+const MenuWrapper = glamorous.div(({ fixed, theme: { colors } }) => ({
   cursor: 'pointer',
   marginTop: rhythm(1),
   marginRight: rhythm(1),
+  zIndex: 2,
+
+  ...fixed ? {
+    position: 'fixed',
+    top: 0,
+    right: 0
+  } : {},
 
   '& svg': {
     width: rhythm(1.5),
@@ -30,8 +37,8 @@ const MenuWrapper = glamorous.div(({ theme: { colors } }) => ({
   }
 }))
 
-const Menu = ({ openMenu }) => (
-  <MenuWrapper onClick={openMenu}>
+const Menu = ({ openMenu, fixed }) => (
+  <MenuWrapper fixed={fixed} onClick={openMenu}>
     <MenuIcon />
   </MenuWrapper>
 )

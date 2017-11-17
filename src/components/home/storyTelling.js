@@ -14,6 +14,10 @@ const Container = glamorous.section(({ theme: { colors, fonts } }) => ({
   paddingTop: '5vh',
   paddingBottom: '15vh',
 
+  '& blockquote': {
+    borderColor: 'white'
+  },
+
   '& p': {
     color: 'white',
     fontFamily: fonts.primary,

@@ -3,6 +3,7 @@ title: Qui distribue les dons spirituels ?
 description: loram ipsum
 date: "2017-08-10"
 order: 1
+listedInHome: true
 ---
 
 Voyons ce qu'en dit la Parole de Dieu dans **1 Corinthiens 12:11** :

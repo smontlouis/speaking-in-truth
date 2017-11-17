@@ -1,26 +1,37 @@
 
-import typography from '../utils/typography'
 import Helmet from 'react-helmet'
 import glamorous from 'glamorous'
 import Post from '../components/post'
+import Row from '../components/row'
+import OpenMenuButton from '../components/header/openMenuButton'
+import { rhythm } from '../utils/typography'
 
-const { Div, H1 } = glamorous
+const Container = glamorous.section(({ theme: { colors, fonts } }) => ({
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  paddingTop: rhythm(4),
+  paddingBottom: rhythm(4)
+}))
 
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
-    <div>
-      <Helmet
-        title={post.frontmatter.title}
-        meta={[
-          { name: 'description', content: post.frontmatter.description }
-        ]}
-      />
-      <Post
-        title={post.frontmatter.title}
-        html={post.html}
-      />
-    </div>
+    <Container>
+      <OpenMenuButton fixed />
+      <Row>
+        <Helmet
+          title={post.frontmatter.title}
+          meta={[
+            { name: 'description', content: post.frontmatter.description }
+          ]}
+          />
+        <Post
+          title={post.frontmatter.title}
+          html={post.html}
+          />
+      </Row>
+    </Container>
   )
 }
 

@@ -1,8 +1,8 @@
+import { Component } from 'react'
 import glamorous from 'glamorous'
 import Helmet from 'react-helmet'
 import Waypoint from 'react-waypoint'
 
-import MenuNav from '../components/menuNav'
 import Container from '../components/container'
 import StoryTelling from '../components/home/storyTelling'
 import Hero from '../components/home/hero'
@@ -24,37 +24,44 @@ const onUnfixMenu = ({ currentPosition, previousPosition }) => {
   }
 }
 
-const IndexPage = ({ data }) => (
-  <Div>
-    <Helmet
-      title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'description', content: data.site.siteMetadata.description }
-      ]}
-    />
-    <MenuNav />
-    <Container>
-      <Waypoint
-        topOffset={500}
-        onEnter={onSectionEnter}
-        onLeave={onSectionLeave}
-      >
-        <div>
-          <Hero />
-          <StoryTelling
-            content={data.markdownRemark.html}
-          />
-        </div>
-      </Waypoint>
-      <Waypoint
-        onEnter={onFixMenu}
-        onLeave={onUnfixMenu}
-      />
-      <BlogPosts posts={data.allMarkdownRemark.edges} />
-    </Container>
-  </Div>
-)
+class IndexPage extends Component {
+  componentDidMount () {
+    setTimeout(() => window.scrollTo(0, 0), 0)
+  }
 
+  render () {
+    const { data } = this.props
+    return (
+      <Div>
+        <Helmet
+          title={data.site.siteMetadata.title}
+          meta={[
+            { name: 'description', content: data.site.siteMetadata.description }
+          ]}
+        />
+        <Container>
+          <Waypoint
+            topOffset={500}
+            onEnter={onSectionEnter}
+            onLeave={onSectionLeave}
+          >
+            <div>
+              <Hero />
+              <StoryTelling
+                content={data.markdownRemark.html}
+              />
+            </div>
+          </Waypoint>
+          <Waypoint
+            onEnter={onFixMenu}
+            onLeave={onUnfixMenu}
+          />
+          <BlogPosts posts={data.allMarkdownRemark.edges} />
+        </Container>
+      </Div>
+    )
+  }
+}
 export default IndexPage
 
 export const query = graphql`
@@ -71,7 +78,14 @@ query IndexQuery($slug: String!) {
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___order], order: ASC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___order], order: ASC },
+      filter: {
+        frontmatter: {
+          listedInHome: { eq: true }
+        }
+      }
+    ) {
       totalCount
       edges {
         node {

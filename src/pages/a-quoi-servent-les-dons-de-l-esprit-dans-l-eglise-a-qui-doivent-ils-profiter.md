@@ -3,6 +3,7 @@ title: A quoi servent les dons de l'Esprit dans l'église ? A qui doivent-ils pr
 description: loram ipsum
 date: "2017-08-10"
 order: 7
+listedInHome: true
 ---
 
 La Bible déclare dans **1 Corinthiens 12:4-7 :**

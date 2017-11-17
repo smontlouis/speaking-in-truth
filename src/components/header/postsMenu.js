@@ -87,7 +87,7 @@ const Li = glamorous.li(({ isActive, theme: { fonts, colors, mediaQueries } }) =
   }
 }))
 
-const Container = glamorous.div(({ isOpened, theme: { mediaQueries } }) => ({
+const Container = glamorous.div(({ currentIndex, isOpened, theme: { mediaQueries } }) => ({
   boxShadow: 'none',
   transition: 'all 0.3s ease-in-out',
   backgroundColor: 'white',
@@ -112,7 +112,7 @@ const Container = glamorous.div(({ isOpened, theme: { mediaQueries } }) => ({
     bottom: 'auto',
     right: 0,
     top: '50vh',
-    transform: 'translateY(-50%) translateX(20px)',
+    transform: `translateY(${currentIndex * -70}px) translateX(20px)`,
     opacity: 0,
     transition: 'all 0.3s ease-in-out',
     display: 'block',
@@ -133,7 +133,7 @@ const Container = glamorous.div(({ isOpened, theme: { mediaQueries } }) => ({
     },
 
     '.with-menu-attached &': {
-      transform: 'translateY(-50%) translateX(0)',
+      transform: `translateY(${currentIndex * -70}px) translateX(20px)`,
       opacity: 1
     },
 
@@ -154,7 +154,9 @@ const Container = glamorous.div(({ isOpened, theme: { mediaQueries } }) => ({
 const togglePostsMenu = () => document.documentElement.classList.toggle('is-menu-opened')
 
 const PostMenu = ({ posts, currentBlog }) => (
-  <Container>
+  <Container
+    currentIndex={currentBlog}
+  >
     <Close
       onClick={togglePostsMenu}
     />
@@ -164,7 +166,7 @@ const PostMenu = ({ posts, currentBlog }) => (
     <Ul
       overflow='auto'
     >
-      {posts.filter(({ node }) => node.fields.slug !== '/').map(({ node }, i) => (
+      {posts.map(({ node }, i) => (
         <Li
           key={i}
           isActive={i === currentBlog}

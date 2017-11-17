@@ -3,6 +3,7 @@ title: Pourquoi Paul disait-il parler en langue plus que tous ?
 description: loram ipsum
 date: "2017-08-10"
 order: 11
+listedInHome: true
 ---
 
 Lisons **1 Corinthiens 14:2‭-‬3‭, ‬27-28 :**

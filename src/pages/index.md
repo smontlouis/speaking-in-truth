@@ -2,6 +2,7 @@
 title: Le parler en langues
 description: loram ipsum
 date: "2017-08-21"
+listedInHome: false
 ---
 
 Le "parler en langues" est une pratique très répandue dans les églises chrétiennes aujourd'hui. L'apôtre Paul traite de ce sujet et aussi plus généralement des dons de l'esprit dans les chapitres 12, 13 et 14 de sa première épître à l'église de Corinthe.

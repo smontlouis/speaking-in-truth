@@ -3,6 +3,7 @@ title: D'où vient le don de parler en langues et quelle est son utilité ?
 description: loram ipsum
 date: "2017-08-21"
 order: 6
+listedInHome: true
 ---
 
 Lisons **Genèse 9:1,7,11 :**

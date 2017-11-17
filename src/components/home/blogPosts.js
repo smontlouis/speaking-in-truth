@@ -19,7 +19,6 @@ const BlogPosts = ({ posts, setCurrentBlog }) => (
     <Header posts={posts} />
     <Row>
       {posts
-        .filter(({ node }) => node.fields.slug !== '/')
         .map(({ node }, i) => (
           <Waypoint
             bottomOffset='60%'
@@ -37,6 +36,7 @@ const BlogPosts = ({ posts, setCurrentBlog }) => (
                 css={{ textDecoration: `none`, color: `inherit` }}
               > */}
               <Post
+                slug={node.fields.slug}
                 title={node.frontmatter.title}
                 html={node.html}
               />

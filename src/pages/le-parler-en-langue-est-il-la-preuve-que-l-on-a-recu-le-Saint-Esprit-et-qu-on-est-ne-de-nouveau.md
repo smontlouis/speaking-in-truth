@@ -3,6 +3,7 @@ title: Le parler en langues est-il la preuve que l'on a reçu le Saint-Esprit et
 description: loram ipsum
 date: "2017-08-21"
 order: 2
+listedInHome: true
 ---
 
 Lors de la pentecôte les disciples se mirent à parler en langues et l'évangile fut prêché avec puissance. Suite à cela 3000 âmes se convertirent et reçurent le Saint-Esprit.

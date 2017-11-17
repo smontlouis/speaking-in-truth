@@ -3,6 +3,7 @@ title: Existe-t-il des exemples bibliques de la manifestation du don des langues
 description: loram ipsum
 date: "2017-08-21"
 order: 5
+listedInHome: true
 ---
 
 Il existe trois références où le don de parler en langues se manifeste dans la Bible. On les trouve dans le livre des Actes des Apôtres :

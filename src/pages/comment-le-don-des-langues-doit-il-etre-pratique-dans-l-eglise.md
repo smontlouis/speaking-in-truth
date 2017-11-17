@@ -3,6 +3,7 @@ title: Comment le don des langues doit-il être pratiqué dans l'église ?
 description: loram ipsum
 date: "2017-08-10"
 order: 8
+listedInHome: true
 ---
 
 > « En est-il qui parlent en langue, que deux ou trois au plus parlent, chacun à son tour, et que quelqu'un interprète; Ainsi donc, frères, aspirez au don de prophétie, et n'empêchez pas de parler en langues. Mais que tout se fasse avec bienséance et avec ordre. » <br><small>- 1 Corinthiens 14:27,39-40</small>

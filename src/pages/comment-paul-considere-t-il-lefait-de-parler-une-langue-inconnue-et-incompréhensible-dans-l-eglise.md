@@ -3,6 +3,7 @@ title: Comment Paul considère-t-il le fait de parler une langue inconnue et inc
 description: loram ipsum
 date: "2017-08-10"
 order: 10
+listedInHome: true
 ---
 
 Lisons **1 Corinthiens 14:2‭-‬3‭, ‬27-28 :**

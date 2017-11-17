@@ -3,6 +3,7 @@ title: Quelle importance occupe le don des langues dans l'église ?
 description: loram ipsum
 date: "2017-08-21"
 order: 3
+listedInHome: true
 ---
 
 Une certaine controverse avait visiblement pris naissance dans l'église de Corinthe au sujet du don des langues, et ce don était élevé à une telle position d'importance dans l'église que l'apôtre Paul fût poussé à écrire à ce sujet dans sa première lettre à cette église (1 corinthiens 12,13 et 14).

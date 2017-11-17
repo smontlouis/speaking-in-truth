@@ -3,6 +3,7 @@ title: Quel don Paul considère-t-il préférable au don des langues ?
 description: loram ipsum
 date: "2017-08-10"
 order: 12
+listedInHome: true
 ---
 
 > "« Je désire que vous parliez tous en langues, mais encore plus que vous prophétisiez. Celui qui prophétise est plus grand que celui qui parle en langues, à moins que ce dernier n’interprète, pour que l’Église en reçoive de l’édification. En est-il qui parlent en langue, que deux ou trois au plus parlent, chacun à son tour, et que quelqu'un interprète; s’il n’y a point d’interprète, qu’on se taise dans l’Église, et qu’on parle à soi-même et à Dieu. » <br> <small>- 1 Corinthiens 14:5‭, ‬27-28</small>

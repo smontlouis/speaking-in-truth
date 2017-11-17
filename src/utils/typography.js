@@ -19,9 +19,6 @@ const typography = new Typography({
   headerWeight: 'normal',
   scaleRatio: 2.1,
   overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options, styles) => ({
-    '#___gatsby': {
-      backgroundColor: '#ddd'
-    },
     'html': {
       overflowX: 'hidden'
     },

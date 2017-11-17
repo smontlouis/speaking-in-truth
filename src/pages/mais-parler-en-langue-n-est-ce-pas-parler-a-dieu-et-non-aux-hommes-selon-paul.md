@@ -3,6 +3,7 @@ title: Mais parler en langues n'est-ce pas parler à Dieu et non aux hommes selo
 description: loram ipsum
 date: "2017-08-10"
 order: 9
+listedInHome: true
 ---
 
 Lisons **1 Corinthiens 14:2**

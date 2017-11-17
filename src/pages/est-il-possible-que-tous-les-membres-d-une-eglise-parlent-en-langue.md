@@ -3,6 +3,7 @@ title: Est-il possible que tous les membres d'une église parlent en langue ?
 description: loram ipsum
 date: "2017-08-21"
 order: 4
+listedInHome: true
 ---
 
 Continuons notre lecture aux versets 29 et 30 de 1 Corinthiens 12 :
