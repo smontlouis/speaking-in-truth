@@ -89,6 +89,7 @@ const Li = glamorous.li(({ isActive, theme: { fonts, colors, mediaQueries } }) =
 
 const Container = glamorous.div(({ currentIndex, isOpened, theme: { mediaQueries } }) => ({
   boxShadow: 'none',
+  zIndex: 3,
   transition: 'all 0.3s ease-in-out',
   backgroundColor: 'white',
   position: 'fixed',
