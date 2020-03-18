@@ -9,10 +9,10 @@ order: 12
 
 Paul déclare ici qu'il désirerait certes que tous parlent en langues si une telle chose était possible, mais encore plus que tous prophétisent ! _(il parle ici au conditionnel puisque comme nous l'avons vu, Paul enseigne que tous ne reçoivent pas le même don)_.
 
-Le don de prophétie ne consiste pas obligatoirement à annoncer des choses à venir mais aussi à prêcher et exhorter. _(Jean le Baptiste fut le plus grand des prophètes selon Jésus (Matt 11:11-15). Pourtant il n'annonca pas de prophétie concernant des choses à venir. Sa mission était de prêcher la repentance et de préparer la voie au Christ qui commença son ministère après lui)_
+Le don de prophétie ne consiste pas obligatoirement à annoncer des choses à venir mais aussi à prêcher et exhorter selon des révélations reçues directement de Dieu. _(Jean le Baptiste fut le plus grand des prophètes selon Jésus (Matt 11:11-15). Pourtant il n'annonca pas de prophétie concernant des choses à venir. Sa mission était de prêcher la repentance et de préparer la voie au Christ qui commença son ministère après lui)_
 
 D'ailleurs il est intéressant de noter que le chapitre de **1 Corinthiens 12** se termine par le verset suivant :
 
 > « Aspirez aux dons les meilleurs. Et je vais encore vous montrer une voie par excellence. » **_(verset 31)_**  
 
-Cette voie par excellence est présentée par Paul comme celle qui surpasse tout au chapitre 13 de 1 Corinthiens : **l'amour agape**.
+Cette voie par excellence est présentée par Paul au chapitre 13, comme celle qui surpasse tout, y compris le don des langues et celui de prophétie : **l'amour agape**.

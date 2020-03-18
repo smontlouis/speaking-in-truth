@@ -27,6 +27,10 @@ Mais cette tache était clairement impossible à réaliser à taille humaine ! C
 
 > « Puis il leur dit : Allez par tout le monde, et prêchez la bonne nouvelle à toute la création. Voici les miracles qui accompagneront ceux qui auront cru : en mon nom, ils chasseront les démons; **ils parleront de nouvelles langues;** » <br><small>- Marc 16:15,17</small>
 
-Paul déclare d'ailleurs dans **1 Corinthiens 14:22** que le don des langues est surtout accordé pour atteindre les non-croyants :
+Paul déclare d'ailleurs dans **1 Corinthiens 14:22** que le don des langues est **surtout accordé pour atteindre les non-croyants :**
 
 > « Par conséquent, les langues sont un signe, non pour les croyants, mais pour les non-croyants; la prophétie, au contraire, est un signe, non pour les non-croyants, mais pour les croyants. »
+
+Ce fut d'ailleurs le cas dans **Actes 2** comme nous l'avons lu précédemment :
+
+> « Ils étaient tous dans l'étonnement et la surprise, et ils se disaient les uns aux autres: Voici, ces gens qui parlent ne sont-ils pas tous Galiléens? Et comment les entendons-nous dans notre propre langue à chacun, dans notre langue maternelle? » <br><small>- Actes 2:7,8</small>
