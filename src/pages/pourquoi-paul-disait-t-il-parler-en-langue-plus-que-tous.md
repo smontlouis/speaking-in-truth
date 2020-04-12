@@ -1,5 +1,5 @@
 ---
-title: Pourquoi Paul disait-il parler en langue plus que tous ?
+title: Pourquoi Paul disait-il parler en langues plus que tous ?
 description: loram ipsum
 date: "2017-08-10"
 order: 11

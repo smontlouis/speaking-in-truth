@@ -10,7 +10,7 @@ Lors de la pentecôte les disciples se mirent à parler en langues et l'évangil
 
 > « Pierre leur dit : Repentez-vous, et que chacun de vous soit baptisé au nom de Jésus-Christ, pour le pardon de vos péchés; **et vous recevrez le don du Saint-Esprit**. Ceux qui acceptèrent sa parole furent baptisés; et, en ce jour-là, le nombre des disciples s'augmenta d'environ trois mille âmes. Ils persévéraient dans l'enseignement des apôtres, dans la communion fraternelle, dans la fraction du pain, et dans les prières. » <br /> <small>Actes 2:38,41,42</small>
 
-Lors de certaines conversions, la réception du Saint-Esprit fut suivie par une manifestation du don des langues. Il existe deux récits bibliques qui témoignent de tels faits : Actes 10:44-46 et Actes 19:6. Si suite à leur conversion 3000 personnes s'étaient aussi mises à parler en langues à la pentecôte, il serait impossible d'imaginer qu'un tel évènement puisse passer inaperçu à la plume de l'auteur du livre des Actes ! 
+Lors de **certaines conversions**, la réception du Saint-Esprit fut suivie par une manifestation du don des langues. Il existe deux récits bibliques qui témoignent de tels faits : Actes 10:44-46 et Actes 19:6. Si les 3000 personnes s'étaient aussi mises à parler en langues à la pentecôte suite à leur conversion, il serait impossible d'imaginer qu'un tel évènement puisse passer inaperçu à la plume de l'auteur du livre des Actes ! 
 Et pourtant, il est intéressant de noter ici que la Bible n'indique nulle part qu'une telle chose se soit produite lors de la conversion de ces 3000 âmes.
 
 La raison en est simple en réalité :
